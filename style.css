@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to bottom, #ff69b4, #ffe4e1); /* Gradiente do rosa choque ao rosa claro */
+    background-size: cover; /* Para cobrir todo o fundo */
+    background-repeat: no-repeat; /* Para não repetir a imagem */
+    background-attachment: fixed; /* Para manter o fundo fixo durante a rolagem (opcional) */
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente para o container */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.item {
+    display: block; /* Faz com que cada item ocupe uma linha */
+    margin: 10px 0; /* Adiciona margem vertical entre os itens */
+    padding: 5px; /* Adiciona um pequeno padding interno para respiro */
+    border-bottom: 1px solid #eee; /* Adiciona uma linha sutil para separação visual */
+}
+
+.item:last-child {
+    border-bottom: none; /* Remove a linha inferior do último item */
+}
+
+.item.paid span {
+    text-decoration: line-through;
+}
+
+.item span {
+    display: block; /* Garante que o texto do item também ocupe a linha */
+    margin-bottom: 5px; /* Espaço entre o texto e os botões (se houver) */
+}
+
+.item button {
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px; /* Adiciona um pequeno espaço entre os botões */
+    margin-right: 5px; /* Adiciona margem à direita dos botões */
+    margin-bottom: 2px; /* Alinha os botões na parte inferior do item */
+}
+
+/* Cor específica para o botão de remover */
+.item button:nth-child(3) { /* Assume que "Remover" é o terceiro botão na div.item */
+    background-color: #dc3545; /* Vermelho */
+}
+
+.item button:nth-child(3):hover {
+    background-color: #c82333;
+}
+
+/* Cor específica para o botão de subtrair valor */
+.item button:nth-child(4) { /* Assume que "Subtrair" é o quarto botão na div.item */
+    background-color: #007bff; /* Azul */
+}
+
+.item button:nth-child(4):hover {
+    background-color: #0056b3;
+}
+
+/* Cor específica para o botão de marcar como pago */
+.item button:nth-child(2) { /* Assume que "Marcar como pago" é o segundo botão na div.item */
+    background-color: #28a745; /* Verde */
+}
+
+.item button:nth-child(2):hover {
+    background-color: #1e7e34;
+}
+
+input {
+    padding: 5px;
+    width: calc(100% - 12px);
+    margin-top: 10px;
+}
+
+.total {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+}
